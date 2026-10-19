@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Рейтинг сайтів</title>
+
+<style>
+body {
+    background-color: #151515;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    color: #ff4444;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background: #242424;
+}
+
+th {
+    background-color: #ff3333;
+    color: white;
+    padding: 15px;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #555;
+}
+
+tr:nth-child(even) {
+    background-color: #333;
+}
+
+tr:hover {
+    background-color: #484848;
+}
+
+a {
+    color: #ff7777;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🏆 Рейтинг сайтів</h1>
+
+<table>
+<tr>
+    <th>Сайт</th>
+    <th>Відвідуваність</th>
+    <th>Рейтинг</th>
+</tr>
+<tr>
+    <td><a href="https://www.pornhub.com/">Pornhub</a></td>
+    <td>Дуже висока</td>
+    <td>🥇 1</td>
+</tr>
+<tr>
+    <td><a href="https://www.google.com/">Google</a></td>
+    <td>Дуже висока</td>
+    <td>🥈 2</td>
+</tr>
+<tr>
+    <td><a href="https://www.youtube.com/">YouTube</a></td>
+    <td>Дуже висока</td>
+    <td>🥉 3</td>
+</tr>
+<tr>
+    <td><a href="https://www.wikipedia.org/">Wikipedia</a></td>
+    <td>Висока</td>
+    <td>4</td>
+</tr>
+</table>
+
+</body>
+</html>
