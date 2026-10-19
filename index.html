@@ -1,18 +1,124 @@
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Рейтинг сайтів</title>
-<link rel="stylesheet" href="./style.css">
+<style>
+  body {
+    background-color: #151515;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 30px 16px;
+  }
+
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 640px;
+    background-color: #242424;
+  }
+
+  th, td {
+    padding: 12px;
+    border: 1px solid #555555;
+    text-align: center;
+  }
+
+  /* Заголовок таблиці: об'єднання по горизонталі (colspan) */
+  .title {
+    background-color: #ff3333;
+    font-size: 22px;
+  }
+
+  /* Підзаголовки стовпців */
+  .head {
+    background-color: #8f1f1f;
+  }
+
+  /* Чергування кольору рядків */
+  tr:nth-child(even) td {
+    background-color: #333333;
+  }
+
+  /* Об'єднана комірка по вертикалі (rowspan) */
+  .group-high {
+    background-color: #1f5f3a !important;
+    font-weight: bold;
+  }
+
+  .group-mid {
+    background-color: #8a6d12 !important;
+    font-weight: bold;
+  }
+
+  /* Колір комірок з рейтингом */
+  .gold   { color: #ffd54a; font-weight: bold; }
+  .silver { color: #d0d0d0; font-weight: bold; }
+  .bronze { color: #e0905a; font-weight: bold; }
+
+  /* Підсвічування рядка при наведенні */
+  tr:hover td {
+    background-color: #484848;
+  }
+
+  /* Нижній рядок: об'єднання по горизонталі (colspan) */
+  .note {
+    background-color: #151515 !important;
+    color: #aaaaaa;
+    font-size: 13px;
+  }
+
+  a {
+    color: #ff7777;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+</style>
 </head>
+
 <body>
-<h1>Рейтинг сайтів</h1>
+
 <table>
-<tr><th>Сайт</th><th>Відвідуваність</th><th>Рейтинг</th></tr>
-<tr><td>Pornhub</td><td>Висока</td><td>1</td></tr>
-<tr><td>Google</td><td>Висока</td><td>2</td></tr>
-<tr><td>YouTube</td><td>Висока</td><td>3</td></tr>
+  <tr>
+    <th colspan="3" class="title">🏆 Рейтинг сайтів</th>
+  </tr>
+  <tr>
+    <th class="head">Сайт</th>
+    <th class="head">Відвідуваність</th>
+    <th class="head">Рейтинг</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.google.com/">Google</a></td>
+    <td rowspan="3" class="group-high">Дуже висока</td>
+    <td class="gold">🥇 1</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/">YouTube</a></td>
+    <td class="silver">🥈 2</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.facebook.com/">Facebook</a></td>
+    <td class="bronze">🥉 3</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.wikipedia.org/">Wikipedia</a></td>
+    <td rowspan="2" class="group-mid">Висока</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.amazon.com/">Amazon</a></td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td colspan="3" class="note">Дані орієнтовні</td>
+  </tr>
 </table>
+
 </body>
 </html>
